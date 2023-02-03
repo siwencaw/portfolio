@@ -11,7 +11,7 @@ section::before {
     position: absolute;
     font-weight: 650;
     top: -10px;
-    left: -30px;
+    left: -10px;
 }
 
 .btn.button {
@@ -36,6 +36,10 @@ section::before {
 
  .home h3 {
     font-size: 48px;
+ }
+
+ .home img {
+    width: 100%;
  }
  
  .home .arrow img {
@@ -140,6 +144,20 @@ section::before {
 
 .form-label {
     font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+    .home img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    section::before {
+        left: -10px;
+        top: 10px;
+        font-size: 54px;
+    }
 }
 
  @keyframes upDown {
